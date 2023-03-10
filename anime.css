@@ -1,0 +1,127 @@
+.container{
+    width: 100%;
+    height: 600px;
+    border:2px solid rgba(143, 93, 93, 0);
+    margin: auto;
+}
+
+.box{
+
+}
+#box1{
+    /* width: 100px;
+    height: 2px;
+    border:2px solid red; */
+    position: absolute;
+    top: 211px;
+    left: 50px;
+    border-bottom: 400px solid #4381b6;
+    border-left: 480px solid transparent;
+    border-right: 500px solid transparent;
+    z-index: 99;
+}
+
+#box2{
+    /* width: 100px;
+    height: 100px;
+    border:2px solid rgb(94, 142, 10); */
+    position: absolute;
+    top: 256px;
+    left: 368px;
+    border-bottom: 280px solid #4381b6;
+    border-left: 369px solid transparent;
+    border-right: 280px solid transparent;
+}
+
+#box3{
+    /* width: 100px;
+    height: 2px;
+    border:2px solid red; */
+    position: absolute;
+    top: 209px;
+    left: 358px;
+    border-bottom: 402px solid #4381b6;
+    border-left: 570px solid transparent;
+    border-right: 366px solid transparent;
+} 
+
+#sun{
+    position:absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #e4b300;
+    animation-name: sunrise;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* transform: translate(750px, 0px); */
+}
+
+@keyframes sunrise{
+    from{
+        /* transform: translate(400px, 0px); */
+        top: 500px;
+        left:700px;
+    }
+
+    to{
+        left:700px;
+        top:-100px
+        /* transform: translate(750px, 300px); */
+
+    }
+
+}
+
+#cloud1{
+    width: 130px;
+    animation-name: cloudone;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-color: rgba(101, 50, 148, 0);
+}
+@keyframes cloudone{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(900px);
+    }
+}
+
+ #cloud2{
+    width: 130px;
+    animation-name: cloudtwo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+    right:70px;
+    background-color: rgba(101, 50, 148, 0);
+}
+@keyframes cloudtwo{
+    from{
+        transform: translate(900px, 0px);
+
+    }
+    to{
+        transform: translate(0px 900px);
+    }
+}
+
+#cloud3{
+    width: 130px;
+    animation-name: cloudthree;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+    background-color: rgba(101, 50, 148, 0);   
+}
+@keyframes cloudthree{
+    from{
+        transform: translate(0);
+
+    }
+    to{
+        transform: translateX(900px);
+    }
+} 
